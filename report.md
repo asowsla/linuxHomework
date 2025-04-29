@@ -14,9 +14,17 @@
 ![3 hostname and add user](https://github.com/user-attachments/assets/70036e6b-164f-47d0-b8a6-ed1d698f2d61)
 
 В итоге получилось присвоить виртуальным машинам новые 'hostname':
-ВМ А - asowslaserver
-ВМ Б - asowslagateway
-ВМ С - asowslaclient
+ВМ А - asowslaserver, ВМ Б - asowslagateway, ВМ С - asowslaclient
 
 А так же на всех трех виртуальных машинах успешно были добавлены новые пользователи 'not_asowsla' и присвоены пароли для авторизации
 
+---
+
+Далее была произведена конфигурация виртуальных интерфейсов на всех трех виртуальных машинах:
+![1 configuration](https://github.com/user-attachments/assets/2185bfec-72ec-4fa8-87de-5b413970cd0f)
+![2 configuration](https://github.com/user-attachments/assets/dd83cf2e-5b1b-45fd-a64d-f67c447ec4c0)
+![3 configuration](https://github.com/user-attachments/assets/f7e060b5-3731-4e7a-80a8-c7a007a3dd23)
+
+На ВМ А был для 'enp0s3' был выставлен автоматический айпи-адрес, а для 'enp0s8' - 192.168.31.10/24 в соответствии с заданием;
+На ВМ Б был для 'enp0s3' был также выставлен автоматический айпи-адрес, для 'enp0s8' - 192.168.31.1/24, а для enp0s9 - 192.168.3.1/24 в соответствии с заданием;
+На ВМ С был для 'enp0s3' выставлен автоматический айпи-адрес, а для 'enp0s8' - 192.168.3.1/24 в соответствии с заданием;
