@@ -37,3 +37,10 @@
 ![1 app and webserver](https://github.com/user-attachments/assets/a4ab76d8-2cfb-4b20-907f-10d7a4ef2690)
 
 Скрипты, описанные в 'app.py' и '/lib/systemd/system/web.server.service', представлены отдельно - в папках 'app' и 'configs' соответственно.
+
+---
+
+Рассмотрит ВМ Б. С помощью утилит ip route и iptables были настроены маршрут пакетов от ВМ A до ВМ C и была настроена фильтрация по порту 5000. 
+
+Настройка маршрутов представлена ниже:
+![2 iptables and routes](https://github.com/user-attachments/assets/3148be73-89ea-498b-8dd5-69410d437077)
